@@ -1,0 +1,31 @@
+name: me_card
+description: A flutter application that show my personal info 
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^0.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+# The following section is specific to Flutter.
+flutter:
+  uses-material-design: true
+
+  assets:
+    - images/alvin.jpg
+
+  fonts:
+    - family: Angel
+      fonts:
+        - asset: fonts/Angel Signature.ttf
+    - family: SourceSansPro
+      fonts:
+        - asset: fonts/SourceSansPro-SemiBold.ttf
