@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
             child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             CircleAvatar(
               radius: 50.0,
@@ -33,42 +34,46 @@ class MyApp extends StatelessWidget {
                     letterSpacing: 1.5),
               ),
             ),
-            Container(
-                color: Colors.white,
-                width: 300.0,
-                height: 40.0,
-                padding: EdgeInsets.all(10.0),
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.phone,
-                      color: Colors.blueGrey,
-                    ),
-                    SizedBox(
-                      width: 20.0,
-                    ),
-                    Text("+06 012-8880995")
-                  ],
-                )),
-            Container(
-                color: Colors.white,
-                width: 300.0,
-                height: 40.0,
-                padding: EdgeInsets.all(10.0),
-                margin: EdgeInsets.fromLTRB(0, 20.0, 0, 20.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.email,
-                      color: Colors.blueGrey,
-                    ),
-                    SizedBox(
-                      width: 20.0,
-                    ),
-                    Text("alvinNumber1@gmail.com")
-                  ],
-                )),
+            SizedBox(
+              width: 160,
+              child: Divider(
+                height: 30.0,
+                color: Colors.teal[200],
+              ),
+            ),
+            Card(
+              color: Colors.white,
+              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+              child: ListTile(
+                leading: Icon(
+                  Icons.phone,
+                  color: Colors.blueGrey,
+                ),
+                title: Text("+06 012-8880995"),
+              ),
+            ),
+            Card(
+              color: Colors.white,
+              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+              child: ListTile(
+                leading: Icon(
+                  Icons.email,
+                  color: Colors.blueGrey,
+                ),
+                title: Text("alvinNumber1@gmail.com"),
+              ),
+            ),
+            Card(
+              color: Colors.white,
+              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+              child: ListTile(
+                leading: Icon(
+                  Icons.web,
+                  color: Colors.blueGrey,
+                ),
+                title: Text("https://github.com/alvindrakes"),
+              ),
+            ),
           ],
         )),
       ),

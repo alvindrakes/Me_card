@@ -1,5 +1,5 @@
 name: me_card
-description: A flutter application that show my personal info 
+description: A flutter application that show my personal info
 version: 1.0.0+1
 
 environment:
@@ -21,6 +21,7 @@ flutter:
 
   assets:
     - images/alvin.jpg
+    - icons/github-logo.svg
 
   fonts:
     - family: Angel
