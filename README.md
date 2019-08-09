@@ -1,4 +1,4 @@
-# me_card
+# flutter_me_card
 - a simple app to show my personal contact infos 
 
 ## App functions 
